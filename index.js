@@ -7,15 +7,14 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-var data = {};
 app.get("/", (req,res) => {
-    res.render("index.ejs",data);
+    res.render("index.ejs");
 });
 
 
 app.post("/submit", (req,res) => {
-    data = {count: req.body.fName.length + req.body.lName.length};
-    res.redirect("/");
+    var data = {count: req.body.fName.length + req.body.lName.length};
+    res.render("index.ejs",data;
 });
 
 
