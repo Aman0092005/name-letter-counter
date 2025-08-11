@@ -15,6 +15,7 @@ app.get("/", (req,res) => {
 app.post("/submit", (req,res) => {
     var data = {count: req.body.fName.length + req.body.lName.length};
     res.render("index.ejs",data;
+    data ={};
 });
 
 
