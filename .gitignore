@@ -1,0 +1,28 @@
+# Node modules folder
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+
+# Build output (if any)
+dist/
+build/
+
+# Render specific cache (optional)
+.cache/
